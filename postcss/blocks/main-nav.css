@@ -1,0 +1,51 @@
+.main-nav {
+  background-color: $color-white;
+
+  &--closed {
+
+  }
+
+  &--nojs {
+
+  }
+}
+
+.main-nav__toggle {
+
+}
+
+.main-nav__inner {
+
+}
+
+.main-nav__list {
+
+}
+
+.main-nav__item {
+  position: relative;
+
+  &--icon {
+
+  }
+
+  &--icon-search {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-search.svg");
+    }
+  }
+
+  &--icon-cart {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 15px;
+      background-image: url("../../img/icon-cart.svg");
+    }
+  }
+}

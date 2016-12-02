@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: $color-gray;
+}
+
+.page-footer__inner {
+
+}
+
+.page-footer__copyright {
+
+}
+
+.page-footer__copyright-link {
+  background-image: url("../../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+}

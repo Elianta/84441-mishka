@@ -1,0 +1,8 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: $text-color;
+  font-style: normal;
+  background-color: $color-white;
+}
