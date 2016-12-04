@@ -1,0 +1,27 @@
+.slider {
+  background-color: #ffffff;
+}
+
+.slider__items {
+
+}
+
+.slider__item {
+
+}
+
+.slider__controls {
+
+}
+
+.slider__btn {
+
+  &--prev {
+    background-image: url("../../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+  }
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,8 @@
+.separator {
+
+  &::after {
+    content: "";
+    height: 7px;
+    background-image: url();
+  }
+}

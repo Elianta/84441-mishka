@@ -1,0 +1,70 @@
+.features {
+
+}
+
+.features__title {
+
+}
+
+.features__list {
+
+}
+
+.features__item {
+  position: relative;
+
+  &--materials {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-1.svg");
+    }
+  }
+  &--price {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-2.svg");
+    }
+  }
+  &--like {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-3.svg");
+    }
+  }
+  &--care {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-4.svg");
+    }
+  }
+  &--support {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-5.svg");
+    }
+  }
+  &--box {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 19px;
+      background-image: url("../../img/icon-feature-6.svg");
+    }
+  }
+}

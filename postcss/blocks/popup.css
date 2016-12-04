@@ -1,0 +1,23 @@
+.popup {
+  background-color: $color-white;
+}
+
+.popup__title {
+
+}
+
+.popup__description {
+
+}
+
+.popup__option {
+
+}
+
+.popup__option-name {
+
+}
+
+.popup__btn {
+  background-color: $color-mint;
+}
