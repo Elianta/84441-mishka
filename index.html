@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Показать меню</button>
         <div class="main-nav__inner">
+          <button class="main-nav__toggle" type="button">Показать меню</button>
           <a class="page-header__logo" href="#">
-            <img src="img/logo-mobile.svg" alt="Главная" width="86" height="35">
+            <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -26,15 +27,15 @@
       </div>
 
       <ul class="short-nav">
-        <li class="short-nav__item  short-nav__item--icon  short-nav__item--icon-interior"><a href="#">Предметы интерьера</a></li>
-        <li class="short-nav__item  short-nav__item--icon  short-nav__item--icon-toys"><a href="#">Детские игрушки</a></li>
+        <li class="short-nav__item  short-nav__item--interior"><a href="#">Предметы интерьера</a></li>
+        <li class="short-nav__item  short-nav__item--toys"><a href="#">Детские игрушки</a></li>
       </ul>
     </header>
 
     <section class="best-product  separator">
       <h2 class="best-product__title">Вязаные корзинки</h2>
       <div class="best-product__sign">Товар недели</div>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="best-product__features">
         <tr>
           <td class="best-product__feature">Цвет:</td>
@@ -87,24 +88,24 @@
     </section>
 
     <div class="contacts">
-      <table class="contacts__table">
-        <tr>
-          <td>e-mail:</td>
-          <td>
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </td>
-        </tr>
-        <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
+      <h2 class="contacts__title">Контакты</h2>
+      <dl class="contacts__table">
+        <dt class="contacts__type">e-mail:</dt>
+        <dd class="contacts__value">
+          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </dd>
+        <dt class="contacts__type">адрес:</dt>
+        <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+      </dl>
       <div class="map-address"></div>
       <a class="btn  contacts__btn" href="#">Напишите нам</a>
     </div>
 
     <footer class="page-footer">
       <div class="page-footer__inner">
+        <a class="page-footer__logo" href="#">
+          <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
+        </a>
         <div class="social-links">
           <a class="social-link  social-link--inst" href="#">Мы в Инстаграме</a>
           <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
