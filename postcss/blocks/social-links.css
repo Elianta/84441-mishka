@@ -1,0 +1,6 @@
+.social-links {
+  display: flex;
+  width: 260px;
+
+  outline: 1px solid hotpink;
+}

@@ -1,6 +1,17 @@
 .map-address {
+  margin-left: calc(-100vw / 2 + 260px / 2);
+  margin-right: calc(-100vw / 2 + 260px / 2);
   min-height: 457px;
-  background-color: #f3f1ea;
+  background-color: yellow;
   background-image: url("../../img/map-mobile@1x.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media (--desktop) {
+  .map-address {
+    margin: 0;
+    width: 525px;
+    order: 1;
+  }
 }

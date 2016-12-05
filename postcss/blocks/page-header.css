@@ -3,13 +3,22 @@
 }
 
 .page-header__logo {
-
+  display: block;
+  height: 80px;
+  text-align: center;
+  /* временно */
+  background-color: yellow;
+  outline: 2px solid darkblue;
 }
 
 .page-header__content {
+  @mixin container;
+  min-height: 373px;
 
   &--toy-house {
     background-image: url("../../img/hero-mobile@1x.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   &--align {
@@ -19,4 +28,10 @@
 
 .page-header__title {
 
+}
+
+@media (--tablet) {
+  .page-header__logo {
+    height: 89px;
+  }
 }

@@ -1,30 +1,40 @@
 .short-nav {
-  background-color: $color-mint;
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 .short-nav__item {
   position: relative;
 
-  &--icon {
+  outline: 1px solid hotpink;
+  min-height: 103px;
 
+  &:first-child {
+    background-color: $color-mint;
+  }
+  &:last-child {
+    background-color: $color-mint-dark;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
   }
 
-  &--icon-interior {
+  &--interior {
     &::after {
-      content: "";
-      position: absolute;
-      width: 41px;
-      height: 62px;
       background-image: url("../../img/icon-interior.svg");
     }
   }
-
-  &--icon-toys {
+  &--toys {
     &::after {
-      content: "";
-      position: absolute;
-      width: 61px;
-      height: 61px;
       background-image: url("../../img/icon-toy.svg");
     }
   }

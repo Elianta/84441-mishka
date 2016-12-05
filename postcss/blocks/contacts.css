@@ -1,15 +1,48 @@
 .contacts {
+  @mixin container;
+  box-sizing: border-box;
+  padding-top: 43px;
+  padding-bottom: 39px;
 
+  background-color: peachpuff;
 }
-
+.contacts__title {
+  margin: 0;
+  outline: 1px solid hotpink;
+}
 .contacts__table {
-
+  outline: 1px solid hotpink;
 }
-
+.contacts__type {
+  outline: 1px solid hotpink;
+}
+.contacts__value {
+  outline: 1px solid hotpink;
+}
 .contacts__email {
 
 }
-
 .contacts__btn {
+  outline: 1px solid hotpink;
+}
 
+@media (--tablet) {
+  .contacts__table {
+    display: flex;
+  }
+}
+
+@media (--desktop) {
+  .contacts {
+    padding-left: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* ??? для переноса карты в следующий столбец */
+    height: 460px;
+  }
+  .contacts__table {
+    display: block;
+    width: 305px;
+  }
 }
