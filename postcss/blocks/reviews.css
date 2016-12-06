@@ -1,31 +1,60 @@
 .reviews {
-
+  background-color: yellow;
 }
-
 .reviews__inner {
+  @mixin container;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 44px;
 
 }
-
 .reviews__title {
-
+  margin: 0;
+  margin-bottom: 18px;;
+  outline: 1px solid hotpink;
 }
-
 .reviews__list {
-
+  padding-top: 15px;
+  padding-bottom: 34px;
+  outline: 4px solid hotpink;
 }
-
 .reviews__item {
-
+  margin: 0;
+  outline: 2px solid hotpink;
 }
-
 .reviews__author-name {
-
+  outline: 1px solid hotpink;
 }
-
 .reviews__author-nickname {
-
+  display: block;
+  outline: 1px solid hotpink;
+}
+.reviews__btn {
+  text-decoration: none;
+  outline: 1px solid hotpink;
 }
 
-.reviews__btn {
+@media (--tablet) {
+  .reviews__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 79px;
+    padding-bottom: 68px;
+  }
+  .reviews__title {
+    flex-grow: 1;
+  }
+  .reviews__list {
+    order: 2;
+  }
+  .reviews__btn {
+    order: 1;
+    align-self: flex-start;
+  }
+}
 
+@media (--desktop) {
+  .reviews__inner {
+    padding-left: 175px;
+  }
 }
