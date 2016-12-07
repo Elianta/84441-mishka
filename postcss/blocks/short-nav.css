@@ -1,3 +1,5 @@
+@import "../global/variables.css";
+
 .short-nav {
   width: 320px;
   box-sizing: border-box;
@@ -14,10 +16,10 @@
   outline: 1px solid hotpink;
   min-height: 103px;
 
-  &:first-child {
+  &:nth-child(2n+1) {
     background-color: $color-mint;
   }
-  &:last-child {
+  &:nth-child(2n) {
     background-color: $color-mint-dark;
   }
   &::after {
