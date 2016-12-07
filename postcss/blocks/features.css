@@ -72,10 +72,10 @@
     width: 300px;
     margin-right: 34px;
 
-    &:nth-child(2) {order: 1;}
-    &:nth-child(3) {order: 3;}
-    &:nth-child(5) {order: 2;}
-    &:nth-child(6) {order: 4;}
+    &--price {order: 1;}
+    &--like {order: 3;}
+    &--support {order: 2;}
+    &--box {order: 4;}
   }
 }
 
