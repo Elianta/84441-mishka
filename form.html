@@ -30,53 +30,59 @@
     <div class="order">
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form" method="post">
-        <fieldset class="order__group">
-          <legend class="order__group-name">Тип</legend>
-
-          <input class="order__option" type="radio" name="product-type" id="product-type-1" value="type-1" checked>
-          <label class="order__radio-name" for="product-type-1">Аксессуар для интерьера</label>
-
-          <input class="order__option" type="radio" name="product-type" id="product-type-2" value="type-2">
-          <label class="order__radio-name" for="product-type-2">Детская игрушка</label>
-        </fieldset>
-
-        <fieldset class="order__group">
-          <legend class="order__group-name">Цвет</legend>
-
-          <input class="order__option" type="checkbox" name="white" id="white" checked>
-          <label class="order__checkbox-name" for="white">Белый</label>
-
-          <input class="order__option" type="checkbox" name="gray" id="gray" checked>
-          <label class="order__checkbox-name" for="gray">Серый</label>
-
-          <input class="order__option" type="checkbox" name="tiffani" id="tiffani">
-          <label class="order__checkbox-name" for="tiffani">&laquo;Тиффани&raquo;</label>
-
-          <input class="order__option" type="checkbox" name="black" id="black">
-          <label class="order__checkbox-name" for="black">Черный</label>
-
-          <input class="order__option" type="checkbox" name="pink" id="pink">
-          <label class="order__checkbox-name" for="pink">Розовый</label>
-
-          <input class="order__option" type="checkbox" name="orange" id="orange">
-          <label class="order__checkbox-name" for="orange">Оранжевый</label>
-        </fieldset>
-
-        <fieldset class="order__group">
-          <legend class="order__group-name">ФИО</legend>
-          <div class="order__group-item">
-            <label class="order__field-name" for="first-name">Имя:</label>
-            <input class="order__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя&ast;" required>
+        <section class="order__group">
+          <h2 class="order__group-name">Тип</h2>
+          <div class="order__option-wrap  order__option-wrap--column">
+            <input class="order__option" type="radio" name="product-type" id="product-type-1" value="type-1" checked>
+            <label class="order__option-name  order__option-name--radio" for="product-type-1">Аксессуар для интерьера</label>
+            <input class="order__option" type="radio" name="product-type" id="product-type-2" value="type-2">
+            <label class="order__option-name  order__option-name--radio" for="product-type-2">Детская игрушка</label>
           </div>
-          <div class="order__group-item">
-            <label class="order__field-name" for="last-name">Фамилия:</label>
-            <input class="order__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию&ast;" required>
+        </section>
+
+        <section class="order__group">
+          <h2 class="order__group-name">Цвет</h2>
+          <div class="order__option-wrap">
+            <input class="order__option" type="checkbox" name="white" id="white" checked>
+            <label class="order__option-name  order__option-name--checkbox" for="white">Белый</label>
+
+            <input class="order__option" type="checkbox" name="gray" id="gray" checked>
+            <label class="order__option-name  order__option-name--checkbox" for="gray">Серый</label>
+
+            <input class="order__option" type="checkbox" name="tiffani" id="tiffani">
+            <label class="order__option-name  order__option-name--checkbox" for="tiffani">&laquo;Тиффани&raquo;</label>
+
+            <input class="order__option" type="checkbox" name="black" id="black">
+            <label class="order__option-name  order__option-name--checkbox" for="black">Черный</label>
+
+            <input class="order__option" type="checkbox" name="pink" id="pink">
+            <label class="order__option-name  order__option-name--checkbox" for="pink">Розовый</label>
+
+            <input class="order__option" type="checkbox" name="orange" id="orange">
+            <label class="order__option-name  order__option-name--checkbox" for="orange">Оранжевый</label>
           </div>
-          <div class="order__group-item">
-            <label class="order__field-name" for="middle-name">Отчество:</label>
-            <input class="order__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+        </section>
+
+        <section class="order__group">
+          <h2 class="order__group-name">ФИО</h2>
+          <div class="order__option-wrap  order__option-wrap--column">
+            <div class="order__group-item">
+              <label class="order__field-name" for="first-name">Имя:</label>
+              <input class="order__field" type="text" name="first-name" id="first-name"
+                     placeholder="Введите ваше имя&ast;" required>
+            </div>
+            <div class="order__group-item">
+              <label class="order__field-name" for="last-name">Фамилия:</label>
+              <input class="order__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию&ast;"
+                     required>
+            </div>
+            <div class="order__group-item">
+              <label class="order__field-name" for="middle-name">Отчество:</label>
+              <input class="order__field" type="text" name="middle-name" id="middle-name"
+                     placeholder="Отчество, если желаете">
+            </div>
           </div>
-        </fieldset>
+        </section>
 
         <div class="order__group">
           <label for="tel" class="order__group-name">Тел</label>
@@ -94,8 +100,10 @@
           </textarea>
         </div>
 
-        <p class="order__note">*Поля обязательны для заполнения</p>
-        <button class="btn  order__btn" type="submit">Отправить заказ</button>
+        <div class="order__option-wrap">
+          <p class="order__note">*Поля обязательны для заполнения</p>
+          <button class="btn  order__btn" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </div>
 
