@@ -5,11 +5,13 @@
   padding: 0;
   flex-direction: column;
   list-style-type: none;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: bold;
 }
 .short-nav__item {
   position: relative;
   flex-grow: 1;
-  outline: 1px solid hotpink;
 
   &:nth-child(2n+1) {
     background-color: $color-mint;
@@ -20,30 +22,36 @@
 }
 .short-nav__inner {
   @mixin container;
-  padding-top: 15px;
+  padding: 28px 130px 28px 0;
   outline: 2px dotted yellow;
 }
 .short-nav__link {
   display: block;
   width: 100%;
+  text-decoration: none;
+  color: $color-white;
 
   &::after {
     content: "";
     position: absolute;
-    right: 15%;
-    bottom: 15px;
-    width: 62px;
-    height: 62px;
     background-repeat: no-repeat;
   }
 
   &--interior {
     &::after {
+      width: 41px;
+      height: 62px;
+      right: calc((100vw - 320px) / 2 + 26px);
+      bottom: 16px;
       background-image: url("../../img/icon-interior.svg");
     }
   }
   &--toys {
     &::after {
+      width: 61px;
+      height: 61px;
+      right: calc((100vw - 320px) / 2 + 16px);
+      bottom: 18px;
       background-image: url("../../img/icon-toy.svg");
     }
   }
