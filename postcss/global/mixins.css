@@ -1,6 +1,7 @@
 @define-mixin container {
   width: 260px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (--tablet) {
     width: 668px;
