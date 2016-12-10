@@ -1,16 +1,13 @@
 .page-footer {
-  @mixin container;
-  display: flex;
-  flex-direction: column;
   padding-top: 24px;
   padding-bottom: 23px;
-
   background-color: yellow;
 }
 .page-footer__inner {
   @mixin container;
   display: flex;
   flex-direction: column;
+  outline: 3px solid hotpink;
 }
 .page-footer__logo {
   display: none;
@@ -30,12 +27,12 @@
 
 @media (--tablet) {
   .page-footer {
-    flex-direction: row;
     padding-top: 51px;
     padding-bottom: 51px;
   }
   .page-footer__inner {
     flex-direction: row;
+    justify-content: space-between;
   }
   .page-footer__logo {
     display: block;
