@@ -1,6 +1,6 @@
-body {
+:root {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2.0;
   font-family: "Open Sans", Arial, sans-serif;
   color: $text-color;
   font-style: normal;

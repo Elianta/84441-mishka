@@ -1,27 +1,41 @@
 .slider {
-  background-color: #ffffff;
+  position: relative;
 }
-
 .slider__items {
-
 }
-
 .slider__item {
 
 }
-
 .slider__controls {
+  display: flex;
+  border: 1px solid #ececec;
 
 }
-
 .slider__btn {
+  margin: 0;
+  padding: 0;
+  width: 129px;
+  height: 50px;
+  border: none;
+  font-size: 0px;
+  background-color: $color-white;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   &--prev {
+    border-right: 1px solid #ececec;
     background-image: url("../../img/icon-left-arrow.svg");
-    background-repeat: no-repeat;
+
   }
   &--next {
     background-image: url("../../img/icon-right-arrow.svg");
-    background-repeat: no-repeat;
+  }
+}
+
+@media (--tablet) {
+  .slider__controls {
+    position: absolute;
+    bottom: 102px;
+    right: 0;
   }
 }

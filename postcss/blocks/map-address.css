@@ -1,6 +1,24 @@
 .map-address {
-  min-height: 457px;
-  background-color: #f3f1ea;
+  padding-top: calc(457/320 * 100%);
+  background-color: yellow;
   background-image: url("../../img/map-mobile@1x.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (--tablet) {
+  .map-address {
+    padding: 0;
+    height: 457px;
+  }
+}
+
+@media (--desktop) {
+  .map-address {
+    margin: 0;
+    padding: 0;
+    width: 525px;
+    order: 1;
+  }
 }

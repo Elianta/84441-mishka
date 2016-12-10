@@ -1,15 +1,66 @@
 .contacts {
-
+  padding-top: 43px;
+  padding-bottom: 39px;
+  box-sizing: border-box;
+  background-color: peachpuff;
 }
-
+.contacts__inner {
+  @mixin container;
+  outline: 2px dotted yellow;
+}
+.contacts__title {
+  margin: 0;
+  outline: 1px solid hotpink;
+}
 .contacts__table {
-
+  display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid hotpink;
 }
-
+.contacts__type {
+  outline: 1px solid hotpink;
+}
+.contacts__value {
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 19px;
+  max-width: 201px;
+  outline: 1px solid hotpink;
+}
 .contacts__email {
 
 }
-
 .contacts__btn {
+  outline: 1px solid hotpink;
+}
 
+@media (--tablet) {}
+
+@media (--desktop) {
+  .contacts {
+    @mixin container;
+    padding-left: 175px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts__inner {
+    max-width: 350px;
+    margin: 0;
+    padding-right: 47px;
+  }
+  .contacts__table {
+    padding: 0;
+  }
+  .contacts__type {
+    width: 60px;
+  }
+  .contacts__value {
+    padding-left: 18px;
+    max-width: 227px;
+  }
+  .contacts__btn {
+    order: 2;
+    /* Margin-top равен высоте кнопки */
+    margin-top: -55px;
+  }
 }

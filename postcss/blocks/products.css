@@ -1,19 +1,42 @@
 .products {
-
+  @mixin container;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: 2px dotted yellow;
 }
-
 .products__item {
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+  outline: 1px solid hotpink;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.products__item-image {
-
+@media (--tablet) {
+  .products {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+  .products__item {
+    margin-bottom: 54px;
+  }
 }
 
-.products__item-title {
+@media (--desktop) {
+  .products {
+    padding-top: 112px;
+    padding-bottom: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .products__item {
+    margin-bottom: 30px;
 
-}
-
-.products__item-price {
-
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
 }

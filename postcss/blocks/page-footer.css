@@ -1,16 +1,40 @@
 .page-footer {
-  background-color: $color-gray;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  background-color: yellow;
 }
-
 .page-footer__inner {
-
+  @mixin container;
+  display: flex;
+  flex-direction: column;
+  outline: 3px solid hotpink;
 }
+.page-footer__logo {
+  display: none;
+  width: 105px;
 
+  outline: 1px solid hotpink;
+}
 .page-footer__copyright {
+  width: 185px;
 
+  outline: 1px solid hotpink;
 }
-
 .page-footer__copyright-link {
   background-image: url("../../img/htmlacademy.svg");
   background-repeat: no-repeat;
+}
+
+@media (--tablet) {
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
+  .page-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__logo {
+    display: block;
+  }
 }

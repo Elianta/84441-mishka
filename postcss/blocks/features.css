@@ -1,70 +1,92 @@
 .features {
+  @mixin container;
+  box-sizing: border-box;
+  padding-top: 33px;
+  padding-bottom: 33px;
 
+  background-color: peachpuff;
 }
-
 .features__title {
-
+  margin: 0;
+  outline: 1px solid hotpink;
 }
-
 .features__list {
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: 1px solid hotpink;
 }
-
 .features__item {
   position: relative;
+  outline: 1px solid hotpink;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 19px;
+  }
 
   &--materials {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
       background-image: url("../../img/icon-feature-1.svg");
     }
   }
   &--price {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
-      background-image: url("../../img/icon-feature-2.svg");
+      background-image: url("../../img/icon-feature-3.svg");
     }
   }
   &--like {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
-      background-image: url("../../img/icon-feature-3.svg");
+      background-image: url("../../img/icon-feature-5.svg");
     }
   }
   &--care {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
-      background-image: url("../../img/icon-feature-4.svg");
+      background-image: url("../../img/icon-feature-2.svg");
     }
   }
   &--support {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
-      background-image: url("../../img/icon-feature-5.svg");
+      background-image: url("../../img/icon-feature-4.svg");
     }
   }
   &--box {
     &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
       background-image: url("../../img/icon-feature-6.svg");
     }
+  }
+}
+
+@media (--tablet) {
+  .features {
+    padding-top: 56px;
+    padding-bottom: 70px;
+  }
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: 300px;
+    margin-right: 34px;
+
+    &--price {order: 1;}
+    &--like {order: 3;}
+    &--support {order: 2;}
+    &--box {order: 4;}
+  }
+}
+
+@media (--desktop) {
+  .features {
+    padding-top: 68px;
+    padding-bottom: 86px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+  .features__item {
+    margin-right: 50px;
   }
 }

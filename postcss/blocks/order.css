@@ -1,38 +1,37 @@
 .order {
+  @mixin container;
+  box-sizing: border-box;
+  padding-top: 23px;
+  padding-bottom: 55px;
 
+  outline: 1px solid hotpink;
 }
-
+.order > p {
+  outline: 1px solid hotpink;
+}
 .order__form {
-
+  padding-top: 24px;
 }
-
 .order__group {
+  margin-bottom: 25px;
 
+  outline: 1px solid hotpink;
 }
-
 .order__group-name {
-
+  outline: 1px dotted hotpink;
 }
-
 .order__option {
 
 }
+.order__option-name {
 
-.order__radio-name {
+  &--radio {}
 
+  &--checkbox {}
 }
+.order__group-item {}
 
-.order__checkbox-name {
-
-}
-
-.order__group-item {
-
-}
-
-.order__field-name {
-
-}
+.order__field-name {}
 
 .order__field {
 
@@ -49,14 +48,50 @@
   }
 }
 
-.order__field-area {
+.order__field-area {}
 
+.order__note {}
+
+.order__btn {}
+
+@media (--tablet) {
+  .order__group {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .order__group-name {
+    display: block;
+    width: 167px;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  .order__option-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    outline: 3px dotted orange;
+
+    &--column {
+      flex-direction: column;
+    }
+  }
+  .order__note {
+    order: 1;
+  }
 }
 
-.order__note {
-
-}
-
-.order__btn {
-
+@media (--desktop) {
+  .order > p {
+    padding-left: 175px;
+  }
+  .order__group-name {
+    width: 175px;
+  }
+  .order__btn {
+    margin-left: 175px;
+  }
 }

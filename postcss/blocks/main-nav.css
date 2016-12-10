@@ -1,6 +1,5 @@
 .main-nav {
-  background-color: $color-white;
-
+  background-color: peachpuff;
   &--closed {
 
   }
@@ -9,43 +8,117 @@
 
   }
 }
-
 .main-nav__toggle {
-
+  position: absolute;
+  right: 1px;
+  z-index: 1;
 }
-
 .main-nav__inner {
+  @mixin container;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
+  outline: 2px solid hotpink;
 }
+.main-nav__list,
+.main-nav__item {
+  margin: 0;
+  padding: 0;
 
+  outline: 2px solid hotpink;
+}
 .main-nav__list {
-
+  list-style-type: none;
 }
-
 .main-nav__item {
   position: relative;
 
   &--icon {
 
-  }
-
-  &--icon-search {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 19px;
-      background-image: url("../../img/icon-search.svg");
-    }
-  }
-
-  &--icon-cart {
     &::before {
       content: "";
       position: absolute;
       width: 21px;
-      height: 15px;
-      background-image: url("../../img/icon-cart.svg");
+      height: 21px;
+
+      outline: 1px solid $color-mint-dark;
     }
+
+    &--icon-search {
+      &::before {
+        background-image: url("../../img/icon-search.svg");
+      }
+    }
+
+    &--icon-cart {
+      &::before {
+        background-image: url("../../img/icon-cart.svg");
+      }
+    }
+  }
+}
+.main-nav__hot-links {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  list-style-type: none;
+}
+
+@media (--tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+  }
+  .main-nav__item {
+    margin: 0;
+  }
+  .main-nav__item:nth-child(-n+2) {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: -50px;
+    left: 0;
+    z-index: 10;
+    width: 167px;
+    padding-right: 10px;
+  }
+  .main-nav__item:nth-child(2) {
+    left: 167px;
+  }
+}
+
+@media (--desktop) {
+  .main-nav__list {
+    width: 100%;
+  }
+  .main-nav__item:nth-child(-n+2) {
+    position: static;
+  }
+  .main-nav__item:nth-child(2) {
+    margin-right: 300px;
+  }
+  .main-nav__item:nth-child(3) {
+    margin-left: auto;
+  }
+  .main-nav__hot-links {
+    display: flex;
+  }
+  .main-nav__hot-link {
+    width: 175px;
+    margin-right: 44px;
+    z-index: 15;
   }
 }

@@ -1,6 +1,7 @@
-@import "normalize.css";
+@import "global/normalize.css";
 @import "global/fonts.css";
-@import "variables.css";
+@import "global/variables.css";
+@import "global/mixins.css";
 @import "global/scaffolding.css";
 @import "blocks/btn.css";
 @import "blocks/page-header.css";
@@ -10,12 +11,15 @@
 @import "blocks/features.css";
 @import "blocks/reviews.css";
 @import "blocks/slider.css";
+@import "blocks/contacts.css";
 @import "blocks/map-address.css";
 @import "blocks/page-footer.css";
 @import "blocks/overlay.css";
 @import "blocks/separator.css";
 @import "blocks/social-link.css";
+@import "blocks/social-links.css";
 @import "blocks/popup.css";
 @import "blocks/order.css";
 @import "blocks/products.css";
+@import "blocks/product.css";
 @import "blocks/process.css";
