@@ -1,0 +1,46 @@
+.product {
+
+}
+.product__image {
+  width: 260px;
+  height: 195px;
+  outline: 1px solid hotpink;
+}
+.product__title {
+  outline: 1px solid hotpink;
+}
+.product__description {
+  outline: 1px solid hotpink;
+}
+.product__price {
+  outline: 1px solid hotpink;
+}
+
+@media (--tablet) {
+  .product {
+    display: flex;
+  }
+  .product__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .product__image {
+    width: 334px;
+    height: 334px;
+  }
+  .product__price {
+    margin-top: auto;
+  }
+}
+
+@media (--desktop) {
+  .product {
+    flex-direction: column;
+    width: 315px;
+  }
+  .product__image {
+    width: 315px;
+    height: 462px;
+  }
+}
