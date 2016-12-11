@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   flex-direction: column;
   list-style-type: none;
   font-size: 19px;
@@ -10,8 +11,8 @@
   font-weight: bold;
 }
 .short-nav__item {
+  box-sizing: border-box;
   position: relative;
-  flex-grow: 1;
 
   &:nth-child(2n+1) {
     background-color: $color-mint;
@@ -62,13 +63,12 @@
     @mixin container;
     flex-direction: row;
   }
+  .short-nav__item {
+    width: 50%;
+  }
   .short-nav__inner {
-    width: 266px;
+    width: 100%;
+    padding-left: 36px;
   }
 }
 
-@media (--desktop) {
-  .short-nav__inner {
-    width: 455px;
-  }
-}
