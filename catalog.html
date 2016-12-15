@@ -10,20 +10,28 @@
     <header class="page-header">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
-          <button class="main-nav__toggle" type="button">Показать меню</button>
-          <a class="page-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
-          </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item  main-nav__item--icon  main-nav__item--icon-search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item  main-nav__item--icon  main-nav__item--icon-cart"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-          <ul class="main-nav__hot-links">
-            <li class="main-nav__hot-link"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__hot-link"><a href="#">Распродажа</a></li>
-          </ul>
+          <div class="main-nav__toggle-wrap">
+            <button class="main-nav__toggle" type="button">Показать меню</button>
+            <a class="page-header__logo" href="index.html">
+              <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
+            </a>
+          </div>
+          <div class="main-nav__lists">
+            <ul class="main-nav__list  main-nav__list--positioned">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--icon-search"
+                                            href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--icon-cart"
+                                            href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <ul class="main-nav__hot-links">
+              <li class="main-nav__hot-link"><a href="#">Новые поступления</a></li>
+              <li class="main-nav__hot-link"><a href="#">Распродажа</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="page-header__content">
@@ -38,7 +46,7 @@
           <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
         </a>
         <div class="product__inner">
-          <h2><a class="product__title" href="#">Зайчик-попрыгайчик</a></h2>
+          <h2 class="product__title"><a href="#">Зайчик-попрыгайчик</a></h2>
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <a class="product__price" href="#">1 200 руб.</a>
         </div>
@@ -112,5 +120,21 @@
 
     <div class="overlay"></div>
 
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
