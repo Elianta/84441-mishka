@@ -10,22 +10,28 @@
     <header class="page-header">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
-          <button class="main-nav__toggle" type="button">Показать меню</button>
-          <a class="page-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
-          </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item  main-nav__item--icon  main-nav__item--icon-search"><a href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item  main-nav__item--icon  main-nav__item--icon-cart"><a href="#">Корзина: пока
-              пуста</a></li>
-          </ul>
-          <ul class="main-nav__hot-links">
-            <li class="main-nav__hot-link"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__hot-link"><a href="#">Распродажа</a></li>
-          </ul>
+          <div class="main-nav__toggle-wrap">
+            <button class="main-nav__toggle" type="button">Показать меню</button>
+            <a class="page-header__logo" href="index.html">
+              <img src="img/logo-mobile.svg" alt="Главная" width="86" height="80">
+            </a>
+          </div>
+          <div class="main-nav__lists">
+            <ul class="main-nav__list  main-nav__list--positioned">
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--icon-search"
+                                            href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--icon-cart"
+                                            href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <ul class="main-nav__hot-links">
+              <li class="main-nav__hot-link"><a href="#">Новые поступления</a></li>
+              <li class="main-nav__hot-link"><a href="#">Распродажа</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="page-header__content">
@@ -35,10 +41,10 @@
     </header>
 
     <div class="order">
-      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form" method="post">
         <section class="order__group">
-          <h2 class="order__group-name">Тип</h2>
+          <h2 class="order__group-name  order__group-name--big-margin">Тип</h2>
           <div class="order__option-wrap  order__option-wrap--column">
             <input class="order__option" type="radio" name="product-type" id="product-type-1" value="type-1" checked>
             <label class="order__option-name  order__option-name--radio" for="product-type-1">Аксессуар для интерьера</label>
@@ -48,7 +54,7 @@
         </section>
 
         <section class="order__group">
-          <h2 class="order__group-name">Цвет</h2>
+          <h2 class="order__group-name  order__group-name--big-margin">Цвет</h2>
           <div class="order__option-wrap">
             <input class="order__option" type="checkbox" name="white" id="white" checked>
             <label class="order__option-name  order__option-name--checkbox" for="white">Белый</label>
@@ -71,7 +77,7 @@
         </section>
 
         <section class="order__group">
-          <h2 class="order__group-name">ФИО</h2>
+          <h2 class="order__group-name  order__group-name--big-margin">ФИО</h2>
           <div class="order__option-wrap  order__option-wrap--column">
             <div class="order__group-item">
               <label class="order__field-name" for="first-name">Имя:</label>
@@ -101,10 +107,9 @@
           <input class="order__field  order__field--icon  order__field--icon-email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
         </div>
 
-        <div class="order__group">
-          <label for="comment" class="order__group-name">Доп</label>
-          <textarea class="order__field-area" name="comment" id="comment">Опишите все ваши пожелания к заказу
-          </textarea>
+        <div class="order__group  order__group--last">
+          <label for="comment" class="order__group-name  order__group-name--big-margin">Доп</label>
+          <textarea class="order__field-area" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
 
         <div class="order__option-wrap">
@@ -131,5 +136,21 @@
       </div>
     </footer>
 
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
