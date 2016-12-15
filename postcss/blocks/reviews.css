@@ -1,36 +1,41 @@
 .reviews {
-  background-color: yellow;
 }
 .reviews__inner {
   @mixin container;
   padding-top: 24px;
   padding-bottom: 44px;
-
 }
 .reviews__title {
   margin: 0;
-  margin-bottom: 18px;;
-  outline: 1px solid hotpink;
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 1.2;
 }
 .reviews__list {
-  padding-top: 15px;
   padding-bottom: 34px;
-  outline: 4px solid hotpink;
 }
 .reviews__item {
   margin: 0;
-  outline: 2px solid hotpink;
+}
+.reviews__item > p {
+  margin-bottom: 25px;
 }
 .reviews__author-name {
-  outline: 1px solid hotpink;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.333;
+  font-weight: bold;
+  font-style: normal;
 }
 .reviews__author-nickname {
   display: block;
-  outline: 1px solid hotpink;
+  font-size: 18px;
+  line-height: 1.333;
 }
 .reviews__btn {
+  margin-top: 36px;
   text-decoration: none;
-  outline: 1px solid hotpink;
 }
 
 @media (--tablet) {

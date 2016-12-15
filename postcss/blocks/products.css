@@ -1,13 +1,10 @@
 .products {
   @mixin container;
   padding-top: 30px;
-  padding-bottom: 30px;
-  outline: 2px dotted yellow;
+  padding-bottom: 22px;
 }
 .products__item {
-  margin-bottom: 30px;
-  border: 1px solid #ededed;
-  outline: 1px solid hotpink;
+  margin-bottom: 31px;
 
   &:last-child {
     margin-bottom: 0;
@@ -33,6 +30,7 @@
     justify-content: space-between;
   }
   .products__item {
+    width: 315px;
     margin-bottom: 30px;
 
     &:last-child {

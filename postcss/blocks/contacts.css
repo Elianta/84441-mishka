@@ -2,36 +2,63 @@
   padding-top: 43px;
   padding-bottom: 39px;
   box-sizing: border-box;
-  background-color: peachpuff;
 }
 .contacts__inner {
   @mixin container;
-  outline: 2px dotted yellow;
 }
 .contacts__title {
   margin: 0;
-  outline: 1px solid hotpink;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.666;
 }
 .contacts__table {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid hotpink;
+  margin: 0;
+  margin-bottom: 37px;
 }
 .contacts__type {
-  outline: 1px solid hotpink;
+  padding-bottom: 30px;
+  padding-right: 11px;
 }
 .contacts__value {
+  display: block;
   box-sizing: border-box;
   margin: 0;
   padding-left: 19px;
   max-width: 201px;
-  outline: 1px solid hotpink;
+
+  &:last-child {
+    padding-right: 40px;
+  }
 }
 .contacts__email {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: $text-color;
 
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #62d1ba;
+  }
+  &:hover {
+    color: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .contacts__btn {
-  outline: 1px solid hotpink;
+  @mixin container;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 @media (--tablet) {}
@@ -46,6 +73,7 @@
   .contacts__inner {
     max-width: 350px;
     margin: 0;
+    margin-bottom: 55px;
     padding-right: 47px;
   }
   .contacts__table {
@@ -60,6 +88,10 @@
   }
   .contacts__btn {
     order: 2;
+    width: 230px;
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     /* Margin-top равен высоте кнопки */
     margin-top: -55px;
   }

@@ -1,28 +1,35 @@
 .page-footer {
-  padding-top: 24px;
-  padding-bottom: 23px;
-  background-color: yellow;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  background-color: $color-gray;
 }
 .page-footer__inner {
   @mixin container;
   display: flex;
   flex-direction: column;
-  outline: 3px solid hotpink;
 }
 .page-footer__logo {
   display: none;
   width: 105px;
-
-  outline: 1px solid hotpink;
 }
 .page-footer__copyright {
-  width: 185px;
-
-  outline: 1px solid hotpink;
+  padding-top: 20px;
+  padding-left: 37px;
+  padding-bottom: 5px;
+  font-size: 19px;
+  line-height: 1.0;
+  font-weight: bold;
 }
 .page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 39px;
+  margin-left: 19px;
+  font-size: 0;
   background-image: url("../../img/htmlacademy.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (--tablet) {

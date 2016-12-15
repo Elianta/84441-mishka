@@ -1,5 +1,6 @@
 .map-address {
   padding-top: calc(457/320 * 100%);
+  margin-bottom: 38px;
   background-color: yellow;
   background-image: url("../../img/map-mobile@1x.jpg");
   background-position: center center;

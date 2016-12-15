@@ -1,17 +1,28 @@
 .btn {
   display: block;
+  box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.0;
   color: $text-color;
   text-transform: uppercase;
+  text-decoration: none;
   border: 2px solid $text-color;
   background-color: $color-white;
+  cursor: pointer;
+  outline: none;
 
   &--size {
 
+  }
+  &:hover {
+    background-color: $text-color;
+    color: $color-white;
+  }
+  &:active {
+    color: #8d8d8d;
   }
 }

@@ -1,27 +1,69 @@
 .process {
-  padding-bottom: 33px;
+  padding-top: 10px;
+  padding-bottom: 59px;
 }
 .process__inner {
   @mixin container;
-  outline: 1px solid hotpink;
+  padding-top: 23px;
+  padding-bottom: 31px;
+  border: 1px solid #ececec;
 }
 .process__title {
-  outline: 1px solid hotpink;
+  position: relative;
+  margin: 0;
+  padding-left: 89px;
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: calc(24/17);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 33px;
+    width: 32px;
+    height: 27px;
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .process__video {
   position: relative;
-  outline: 1px solid hotpink;
+  height: 150px;
 }
 .process__video-play-btn {
   position: absolute;
-  top: 70px;
-  left: 50px;
+  top: 39px;
+  left: 78px;
+  width: 100px;
+  height: 76px;
+  font-size: 0;
+  border: none;
+  border-radius: 18px;
+  background-image: url("../../img/icon-play.svg");
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 .process__description {
-  outline: 1px solid hotpink;
+  margin: 0;
+  padding: 26px 40px 24px 32px;
+  font-size: 13px;
+  line-height: 24px;
 }
 .process__btn {
-
+  width: 192px;
+  margin: 0 auto;
 }
 
 @media (--tablet) {
@@ -45,6 +87,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
     padding-right: 58px;
   }
   .process__title {
@@ -60,7 +103,8 @@
   .process__video {
     order: 1;
     width: 682px;
-    margin-right: 78px;
+    margin: 0;
+
   }
   .process__wrap {
     width: 232px;

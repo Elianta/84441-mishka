@@ -1,6 +1,10 @@
 .social-links {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
   width: 260px;
-
-  outline: 1px solid hotpink;
+  margin: 0;
+  padding: 11px 0 15px 56px;
+  border-bottom: 1px solid #e5e5e5;
 }

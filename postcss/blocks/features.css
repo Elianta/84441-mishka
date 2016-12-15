@@ -1,59 +1,89 @@
 .features {
   @mixin container;
+  /* временно */ margin-top: 7px;
   box-sizing: border-box;
-  padding-top: 33px;
-  padding-bottom: 33px;
-
-  background-color: peachpuff;
+  padding: 26px 0 4px;
 }
 .features__title {
   margin: 0;
-  outline: 1px solid hotpink;
+  margin-bottom: 32px;
+  font-size: 25px;
+  line-height: 1.2;
 }
 .features__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  outline: 1px solid hotpink;
 }
 .features__item {
   position: relative;
-  outline: 1px solid hotpink;
+  padding-top: 56px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  line-height: 1.12;
+  font-weight: bold;
 
   &::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 19px;
+    background-repeat: no-repeat;
   }
 
   &--materials {
     &::before {
+      width: 33px;
+      height: 38px;
+      top: 0;
+      left: 8px;
       background-image: url("../../img/icon-feature-1.svg");
     }
   }
   &--price {
     &::before {
+      width: 47px;
+      height: 27px;
+      top: 2px;
+      left: 0;
       background-image: url("../../img/icon-feature-3.svg");
     }
   }
   &--like {
     &::before {
+      width: 34px;
+      height: 27px;
+      top: 8px;
+      left: 7px;
       background-image: url("../../img/icon-feature-5.svg");
     }
   }
   &--care {
+    padding-top: 58px;
+
     &::before {
+      width: 35px;
+      height: 34px;
+      top: 6px;
+      left: 4px;
       background-image: url("../../img/icon-feature-2.svg");
     }
   }
   &--support {
     &::before {
+      width: 55px;
+      height: 23px;
+      top: 6px;
+      left: -6px;
       background-image: url("../../img/icon-feature-4.svg");
     }
   }
   &--box {
+    padding-top: 58px;
+
     &::before {
+      width: 33px;
+      height: 32px;
+      top: 5px;
+      left:3px;
       background-image: url("../../img/icon-feature-6.svg");
     }
   }
