@@ -1,25 +1,50 @@
 .social-link {
+  outline: 2px solid darkviolet;
+  position: relative;
   display: block;
-  margin-right: 40px;
-  margin-bottom: 10px;
-  font-size: 0px;
+  width: 40px;
+  height: 44px;
+  font-size: 0;
   background-repeat: no-repeat;
+  > svg {
+    fill: #221f1f;
+  }
+
+  &:hover {
+    > svg {
+      fill: #46c1ae;
+    }
+  }
+  &:active {
+    > svg {
+      opacity: 0.3;
+    }
+  }
 
   &--inst {
-    width: 23px;
-    height: 21px;
-    background-image: url("../../img/icon-insta.svg");
+    > svg {
+      outline: 1px solid orange;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
   }
 
   &--fb {
-    width: 16px;
-    height: 29px;
-    background-image: url("../../img/icon-fb.svg");
+    > svg {
+      outline: 1px solid orange;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+    }
   }
 
   &--tw {
-    width: 24px;
-    height: 21px;
-    background-image: url("../../img/icon-twitter.svg");
+    > svg {
+      outline: 1px solid orange;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
   }
 }
