@@ -1,25 +1,60 @@
 .reviews {
+  padding-top: 24px;
+  padding-bottom: 50px;
+  @media (--tablet) {
+    padding-top: 78px;
+    padding-bottom: 96px;
+  }
 }
+
 .reviews__inner {
   @mixin container;
-  padding-top: 24px;
-  padding-bottom: 44px;
+  outline: 1px solid red;
+  @media (--tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 .reviews__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
   font-size: 25px;
   line-height: 1.2;
+  color: $color-black;
+  outline: 1px solid red;
+  @media (--tablet) {
+    flex-grow: 1;
+    margin-bottom: 39px;
+    font-size: 43px;
+    line-height: calc(50/43);
+    text-indent: -4px;
+  }
 }
+
 .reviews__list {
   padding-bottom: 34px;
+  outline: 1px solid green;
+  @media (--tablet) {
+    order: 2;
+  }
 }
+
 .reviews__item {
+  outline: 2px solid red;
   margin: 0;
 }
+
 .reviews__item > p {
-  margin-bottom: 25px;
+  outline: 2px solid red;
+  margin: 0 0 25px;
+  @media (--tablet) {
+    margin-bottom: 59px;
+    padding-top: 9px;
+    font-size: 17px;
+    line-height: calc(30/17);
+  }
 }
+
 .reviews__author-name {
   display: block;
   margin-bottom: 8px;
@@ -27,35 +62,41 @@
   line-height: 1.333;
   font-weight: bold;
   font-style: normal;
+  color: $color-black;
+  @media (--tablet) {
+    margin-bottom: 2px;
+    font-size: 17px;
+    line-height: calc(24/17);
+  }
 }
+
 .reviews__author-nickname {
   display: block;
   font-size: 18px;
   line-height: 1.333;
+  @media (--tablet) {
+    font-size: 17px;
+    line-height: calc(30/17);
+  }
 }
+
 .reviews__btn {
   margin-top: 36px;
   text-decoration: none;
+  padding-left: 80px;
+  padding-right: 79px;
+
+  @media (--tablet) {
+    order: 1;
+    margin-top: 0;
+    padding-left: 42px;
+    width: 175px;
+    align-self: flex-start;
+    text-align: inherit;
+  }
 }
 
-@media (--tablet) {
-  .reviews__inner {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 79px;
-    padding-bottom: 68px;
-  }
-  .reviews__title {
-    flex-grow: 1;
-  }
-  .reviews__list {
-    order: 2;
-  }
-  .reviews__btn {
-    order: 1;
-    align-self: flex-start;
-  }
-}
+
 
 @media (--desktop) {
   .reviews__inner {

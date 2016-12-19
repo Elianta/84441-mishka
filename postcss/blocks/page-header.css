@@ -1,25 +1,37 @@
 .page-header {
+  position: relative;
   background-color: #f9f9f9;
 }
 .page-header__note {
   display: none;
+  line-height: calc(24/15);
 
   @media (--tablet) {
       display: block;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2px;
+      right: -1px;
   }
 }
+
 .page-header__logo {
   display: block;
   height: 80px;
   text-align: center;
+  @media (--tablet) {
+    height: 87px;
+  }
 }
+
 .page-header__content {
   position: relative;
   padding-top: 70px;
   padding-bottom: 75px;
+  @media (--tablet) {
+    @mixin container;
+    padding-top: 95px;
+    padding-bottom: 79px;
+  }
 
   &--toy-house {
     background-image: url("../../img/hero-mobile@1x.jpg");
@@ -29,11 +41,13 @@
 
   &--align {
     padding-bottom: 122px;
+    @media (--tablet) {
+      padding-top: 153px;
+      padding-bottom: 373px;
+    }
   }
 
-  @media (--tablet) {
-    @mixin container;
-  }
+
 }
 
 .page-header__title {
@@ -42,6 +56,12 @@
   font-size: 27px;
   line-height: calc(30/27);
   text-align: center;
+  color: $color-black;
+  @media (--tablet) {
+    font-size: 43px;
+    line-height: calc(50/43);
+    text-indent: 8px;
+  }
 }
 
 @media (--tablet) {

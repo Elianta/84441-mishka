@@ -2,24 +2,24 @@
   @mixin container;
   padding-top: 30px;
   padding-bottom: 22px;
+  outline: 1px solid red;
+  @media (--tablet) {
+    padding-top: 80px;
+    padding-bottom: 52px;
+  }
 }
 .products__item {
   margin-bottom: 31px;
+  @media (--tablet) {
+    margin-bottom: 54px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-@media (--tablet) {
-  .products {
-    padding-top: 54px;
-    padding-bottom: 54px;
-  }
-  .products__item {
-    margin-bottom: 54px;
-  }
-}
+
 
 @media (--desktop) {
   .products {
