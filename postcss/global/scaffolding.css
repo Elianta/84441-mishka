@@ -1,4 +1,5 @@
 :root {
+  min-width: 320px;
   overflow-x: hidden;
   font-size: 15px;
   line-height: 2.0;
