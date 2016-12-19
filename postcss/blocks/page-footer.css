@@ -1,47 +1,83 @@
 .page-footer {
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: $color-gray;
+  outline: 1px solid red;
+  @media (--tablet) {
+    padding-top: 35px;
+    padding-bottom: 18px;
+  }
 }
+
 .page-footer__inner {
+  outline: 1px solid red;
   @mixin container;
   display: flex;
   flex-direction: column;
-}
-.page-footer__logo {
-  display: none;
-  width: 105px;
-}
-.page-footer__copyright {
-  padding-top: 20px;
-  padding-left: 37px;
-  padding-bottom: 5px;
-  font-size: 19px;
-  line-height: 1.0;
-  font-weight: bold;
-}
-.page-footer__copyright-link {
-  display: inline-block;
-  vertical-align: middle;
-  width: 32px;
-  height: 39px;
-  margin-left: 19px;
-  font-size: 0;
-  background-image: url("../../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (--tablet) {
-  .page-footer {
-    padding-top: 51px;
-    padding-bottom: 51px;
-  }
-  .page-footer__inner {
+  @media (--tablet) {
     flex-direction: row;
     justify-content: space-between;
   }
-  .page-footer__logo {
+}
+
+.page-footer__logo {
+  outline: 1px solid red;
+  display: none;
+  width: 105px;
+  @media (--tablet) {
     display: block;
+    width: 174px;
   }
+}
+
+.page-footer__copyright {
+  outline: 1px solid red;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  font-size: 19px;
+  line-height: 1.0;
+  font-weight: bold;
+  text-align: center;
+  @media (--tablet) {
+    width: 190px;
+    padding-top: 13px;
+  }
+}
+
+.page-footer__copyright-link {
+  outline: 1px solid green;
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  padding-right: 74px;
+  padding-left: 19px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: $color-black;
+  @media (--tablet) {
+    padding-left: 8px;
+  }
+
+  > svg {
+    position: absolute;
+    top: 9px;
+    right: 40px;
+    fill: #63d1bb;
+    @media (--tablet) {
+      right: 0;
+    }
+  }
+
+  &:hover {
+    > svg {
+      fill: #46c1ae;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-hidden {
+  font-size: 0;
 }
