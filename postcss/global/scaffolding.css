@@ -1,4 +1,5 @@
 :root {
+  overflow-x: hidden;
   font-size: 15px;
   line-height: 2.0;
   font-family: "Open Sans", Arial, sans-serif;
