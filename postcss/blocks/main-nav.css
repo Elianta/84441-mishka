@@ -149,6 +149,7 @@
     > svg {
       position: absolute;
       fill: #d3d2d2;
+      top: 30px;
       @media (--tablet) {
         top: 35px;
         left: 33px;
@@ -157,11 +158,15 @@
   }
 
   &--icon-search {
-
+    > svg {
+      left: -3px;
+    }
   }
 
   &--icon-cart {
-
+    > svg {
+      left: -5px;
+    }
   }
 
   &:hover {
