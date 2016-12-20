@@ -20,6 +20,14 @@
   text-align: center;
   @media (--tablet) {
     height: 87px;
+    width: 167px;
+    flex-shrink: 0;
+  }
+  @media (--desktop) {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    z-index: 10;
   }
 }
 
@@ -33,6 +41,7 @@
     padding-bottom: 79px;
   }
 
+
   &--toy-house {
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-position: center -17px;
@@ -45,9 +54,11 @@
       padding-top: 153px;
       padding-bottom: 373px;
     }
+    @media (--desktop) {
+      padding-top: 155px;
+      padding-bottom: 358px;
+    }
   }
-
-
 }
 
 .page-header__title {
@@ -62,21 +73,13 @@
     line-height: calc(50/43);
     text-indent: 8px;
   }
-}
-
-@media (--tablet) {
-  .page-header__logo {
-    width: 167px;
-    flex-shrink: 0;
-  }
-
-}
-
-@media (--desktop) {
-  .page-header__logo {
-    position: absolute;
-    left: 50%;
-    margin-left: -75px;
-    z-index: 10;
+  @media (--desktop) {
+    font-size: 53px;
+    line-height: calc(57/53);
+    text-indent: 16px;
   }
 }
+
+
+
+

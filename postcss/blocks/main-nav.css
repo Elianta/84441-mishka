@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    border-bottom: none;
   }
 }
 .main-nav__toggle-wrap {
@@ -43,6 +44,7 @@
   border: none;
   outline: none;
 }
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -90,6 +92,9 @@
     justify-content: flex-end;
     width: 500px;
   }
+  @media (--desktop) {
+    width: 425px;
+  }
 
   &--positioned {
     @media (--tablet) {
@@ -102,15 +107,24 @@
 
       .main-nav__link {
         font-size: 15px;
-        line-height: calc(24/15);
-        @media (--tablet) {
-          padding: 15px 36px 15px 0;
-          border: none;
-        }
+        line-height: calc(24 / 15);
+        padding: 15px 36px 15px 0;
+        border: none;
       }
     }
     @media (--desktop) {
       position: static;
+
+      .main-nav__link {
+        font-size: 17px;
+        line-height: calc(24 / 17);
+        padding: 32px 37px 31px 33px;
+        border-right: 1px solid #ececec;
+
+        &--no-padding {
+          padding-left: 0;
+        }
+      }
     }
   }
 }
@@ -150,22 +164,26 @@
       position: absolute;
       fill: #d3d2d2;
       top: 30px;
-      @media (--tablet) {
-        top: 35px;
-        left: 33px;
-      }
     }
   }
 
   &--icon-search {
     > svg {
       left: -3px;
+      @media (--tablet) {
+        top: 36px;
+        left: 33px;
+      }
     }
   }
 
   &--icon-cart {
     > svg {
       left: -5px;
+      @media (--tablet) {
+        top: 35px;
+        left: 32px;
+      }
     }
   }
 
@@ -185,9 +203,27 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: -50px;
-  left: 0;
+  bottom: -43px;
+  left: 2px;
   list-style-type: none;
+  @media (--desktop) {
+    display: flex;
+  }
+}
+
+.main-nav__hot-link {
+    width: 175px;
+    margin-right: 44px;
+    z-index: 15;
+    font-size: 15px;
+    line-height: calc(24/15);
+
+
+    a {
+      color: $color-black;
+      font-weight: bold;
+      text-decoration: none;
+    }
 }
 
 @media (--mobile-only) {
@@ -220,23 +256,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    outline: 1px solid hotpink;
   }
 }
 
-@media (--desktop) {
-  .main-nav__list {
-    width: 425px;
-    &--positioned {
-      position: static;
-    }
-  }
-  .main-nav__hot-links {
-    display: flex;
-  }
-  .main-nav__hot-link {
-    width: 175px;
-    margin-right: 44px;
-    z-index: 15;
-  }
-}
+

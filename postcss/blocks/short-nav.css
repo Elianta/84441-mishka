@@ -1,4 +1,5 @@
 .short-nav {
+  outline: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -22,9 +23,7 @@
   @media (--tablet) {
     width: 50%;
   }
-  &:hover {
-    transform: translateY(-5px);
-  }
+
   &:nth-child(2n+1) {
     background-color: $color-mint;
     &:hover {
@@ -46,6 +45,10 @@
     width: 100%;
     padding-left: 36px;
   }
+  @media (--desktop) {
+    padding-right: 350px;
+    padding-left: 40px;
+  }
 }
 
 .short-nav__link {
@@ -53,12 +56,13 @@
   box-sizing: border-box;
   width: 100%;
   padding: 26px 0 36px;
-  margin-bottom: -5px;
   text-decoration: none;
   color: $color-white;
-  transition: transform 0.2s ease-in;
   @media (--tablet) {
     padding: 27px 0 37px;
+  }
+  @media (--desktop) {
+    padding: 29px 0 29px;
   }
 
   svg {
@@ -67,7 +71,6 @@
   }
 
   &:hover {
-    transform: translateY(-5px);
     svg {
       opacity: 0.7;
     }
@@ -105,6 +108,4 @@
       }
     }
   }
-
-
 }
