@@ -78,7 +78,6 @@
 .process__video {
   position: relative;
   height: 150px;
-  outline: 1px solid green;
   @media (--tablet) {
     height: 455px;
     margin-bottom: 39px;
@@ -92,16 +91,18 @@
 
 .process__video-play-btn {
   position: absolute;
-  top: 39px;
-  left: 78px;
-  width: 100px;
-  height: 76px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   font-size: 0;
   border: none;
   border-radius: 18px;
   background-image: url("../../img/icon-play.svg");
-  background-color: $color-white;
+  background-color: transparent;
   background-repeat: no-repeat;
+  background-position: center;
   outline: none;
   cursor: pointer;
 
