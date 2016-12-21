@@ -106,7 +106,7 @@
         </div>
         <div class="process__wrap">
           <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="btn  process__btn" href="#">Сделать заказ</a>
+          <a class="btn  process__btn  btn--to-order" href="#">Сделать заказ</a>
         </div>
       </div>
     </section>
@@ -149,35 +149,28 @@
       </div>
     </footer>
 
-    <div class="popup">
-      <h2 class="popup__title">Добавить в корзину</h2>
-      <p class="popup__description">Выберите размер:</p>
-      <input class="popup__option" type="radio" name="product-size" id="small" value="S">
-      <label for="small" class="popup__option-name  btn  btn--size">S</label>
-      <input class="popup__option" type="radio" name="product-size" id="medium" value="M">
-      <label for="medium" class="popup__option-name  btn  btn--size">M</label>
-      <input class="popup__option" type="radio" name="product-size" id="large" value="L">
-      <label for="large" class="popup__option-name  btn  btn--size">L</label>
-      <button class="popup__btn" type="button">Добавить</button>
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup__inner">
+          <h2 class="popup__title">Добавить в корзину</h2>
+          <p class="popup__description">Выберите размер:</p>
+          <div class="popup__options">
+            <input class="popup__option" type="radio" name="product-size" id="small" value="S">
+            <label for="small" class="popup__option-name  btn  btn--size">S</label>
+            <input class="popup__option" type="radio" name="product-size" id="medium" value="M">
+            <label for="medium" class="popup__option-name  btn  btn--size">M</label>
+            <input class="popup__option" type="radio" name="product-size" id="large" value="L">
+            <label for="large" class="popup__option-name  btn">L</label>
+          </div>
+          <button class="popup__btn  btn" type="button">Добавить</button>
+        </div>
+      </div>
     </div>
 
     <div class="overlay"></div>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    <script src="js/nav-toggle.js"></script>
+    <script src="js/popup.js"></script>
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
   </body>
 </html>
