@@ -12,7 +12,6 @@
   display: block;
   width: 260px;
   height: 195px;
-  outline: 1px solid red;
   flex-shrink: 0;
   @media (--tablet) {
     width: 334px;
@@ -21,6 +20,11 @@
   @media (--desktop) {
     width: 315px;
     height: 462px;
+  }
+
+  > img {
+    width: 100%;
+    height: auto;
   }
 }
 
