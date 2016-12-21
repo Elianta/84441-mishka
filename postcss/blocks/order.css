@@ -5,6 +5,9 @@
   @media (--tablet) {
     padding-bottom: 34px;
   }
+  @media (--desktop) {
+    padding-top: 122px;
+  }
 }
 
 .order__description {
@@ -15,6 +18,10 @@
     font-size: 17px;
     line-height: calc(30/17);
   }
+  @media (--desktop) {
+    padding-left: 177px;
+    padding-right: 175px;
+  }
 }
 
 .order__form {
@@ -24,13 +31,11 @@
 }
 
 .order__group-wrapper {
-  outline: 1px solid red;
   padding-top: 23px;
   padding-bottom: 7px;
   @media (--tablet) {
     padding-top: 50px;
     padding-bottom: 50px;
-    outline: 1px dotted saddlebrown;
   }
 
   &--colored {
@@ -54,7 +59,6 @@
 
 .order__group {
   @mixin container;
-  outline: 3px dashed orange;
   @media (--tablet) {
       display: flex;
       box-sizing: border-box;
@@ -80,6 +84,10 @@
       padding: 16px 0 0;
       line-height: 1.2;
   }
+  @media (--desktop) {
+    width: calc(175 / 1050 * 100%);
+    text-align: center;
+  }
 
   &::after {
     content: "";
@@ -101,7 +109,6 @@
 .order__option-wrap {
   position: relative;
   @mixin container;
-  outline: 2px solid darkviolet;
   @media (--tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +119,9 @@
     &--column {
       flex-direction: column;
     }
+  }
+  @media (--desktop) {
+    width: calc((1050 - 175) / 1050 * 100%);
   }
 }
 
@@ -132,7 +142,6 @@
   line-height: calc(18/17);
   color: $color-black;
   font-weight: bold;
-  outline: 1px solid red;
   @media (--tablet) {
     margin-right: 0;
     padding-left: 80px;
@@ -204,6 +213,9 @@
       padding-bottom: 41px;
       width: 239px;
     }
+    @media (--desktop) {
+      width: 30%;
+    }
 
     &:last-child {
       padding-bottom: 10px;
@@ -233,6 +245,18 @@
       padding-bottom: 18px;
     }
   }
+
+  &--last-col {
+    @media (--desktop) {
+      margin-right: 86px;
+    }
+  }
+
+  &--last-row-big {
+    @media (--desktop) {
+      padding-bottom: 18px;
+    }
+  }
 }
 
 .order__group-item {
@@ -243,6 +267,7 @@
 
 .order__field-name {
   position: relative;
+  flex-shrink: 0;
   font-size: 17px;
   line-height: calc(18/17);
   font-weight: bold;
@@ -265,6 +290,10 @@
       width: 167px;
       padding: 15px 0 0;
       line-height: 1.2;
+    }
+    @media (--desktop) {
+      width: 175px;
+      text-align: center;
     }
 
     &::after {
@@ -308,6 +337,9 @@
     font-size: 19px;
     line-height: 1.0;
   }
+  @media (--desktop) {
+    margin-right: 175px;
+  }
 
   &--last {
     margin-bottom: 0;
@@ -332,18 +364,33 @@
       top: 3px;
       fill: $color-black;
       opacity: 0.2;
+      @media (--desktop) {
+        top: 10px
+      }
     }
   }
 
   &--icon-tel {
+    @media (--tablet) {
+      background-color: $color-gray;
+    }
     + svg {
       right: 7px;
+      @media (--desktop) {
+        right: 181px;
+      }
     }
   }
 
   &--icon-email {
+    @media (--tablet) {
+      background-color: $color-gray;
+    }
     + svg {
       right: 4px;
+      @media (--desktop) {
+        right: 178px;
+      }
     }
   }
 }
@@ -369,6 +416,10 @@
     font-size: 19px;
     line-height: 1.0;
   }
+  @media (--desktop) {
+    width: 100%;
+    margin-right: 175px;
+  }
 
   &::placeholder {
     color: #d2d2d2;
@@ -391,6 +442,10 @@
     font-size: 17px;
     line-height: calc(30/17);
   }
+  @media (--desktop) {
+    padding-top: 8px;
+    margin-right: 171px;
+  }
 }
 
 .order__btn {
@@ -400,17 +455,11 @@
     margin-top: 2px;
     margin-bottom: auto;
   }
-}
-
-
-@media (--desktop) {
-  .order > p {
-    padding-left: 175px;
-  }
-  .order__group-name {
-    width: 175px;
-  }
-  .order__btn {
+  @media (--desktop) {
     margin-left: 175px;
+    margin-top: -3px;
   }
 }
+
+
+

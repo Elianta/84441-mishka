@@ -8,9 +8,12 @@
   }
   @media (--desktop) {
     @mixin container;
-    padding-left: 175px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 142px;
+    padding-left: 175px;
+    padding-bottom: 105px;
+    justify-content: space-between;
   }
 }
 
@@ -20,11 +23,12 @@
     max-width: 350px;
     margin: 0;
     margin-bottom: 55px;
-    padding-right: 47px;
+    padding-right: 45px;
   }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.666;
@@ -34,6 +38,27 @@
     font-size: 43px;
     line-height: calc(50/43);
     text-indent: -3px;
+  }
+  @media (--desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  &::before {
+    @media (--tablet) {
+      content: "";
+      position: absolute;
+      right: 2px;
+      top: -15px;
+      width: 47px;
+      height: 82px;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+    @media (--desktop) {
+      left: -110px;
+      top: -7px;
+    }
   }
 }
 
@@ -52,19 +77,17 @@
 }
 
 .contacts__type {
-  outline: 1px solid red;
   padding-bottom: 30px;
   padding-right: 11px;
   @media (--tablet) {
     padding-right: 5px;
   }
   @media (--desktop) {
-    width: 60px;
+    padding-right: 8px;
   }
 }
 
 .contacts__value {
-  outline: 1px solid red;
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -78,7 +101,9 @@
   }
   @media (--desktop) {
     padding-left: 18px;
-    max-width: 227px;
+    max-width: 240px;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   &--narrow {
@@ -119,10 +144,10 @@
     order: 2;
     width: 230px;
     margin-left: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 37px;
     /* Margin-top равен высоте кнопки */
-    margin-top: -55px;
+    margin-top: -53px;
+    text-align: center;
   }
 }
 

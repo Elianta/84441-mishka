@@ -40,7 +40,10 @@
     padding-top: 95px;
     padding-bottom: 79px;
   }
-
+  @media (--desktop) {
+    padding-top: 94px;
+    padding-bottom: 102px;
+  }
 
   &--toy-house {
     background-image: url("../../img/hero-mobile@1x.jpg");
@@ -76,7 +79,7 @@
   @media (--desktop) {
     font-size: 53px;
     line-height: calc(57/53);
-    text-indent: 16px;
+    text-indent: 12px;
   }
 }
 

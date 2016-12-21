@@ -12,14 +12,14 @@
     height: 457px;
     margin-bottom: 55px;
   }
-}
 
-
-@media (--desktop) {
-  .map-address {
-    margin: 0;
+  @media (--desktop) {
+    margin: -70px 0 0;
     padding: 0;
     width: 525px;
     order: 1;
   }
 }
+
+
+

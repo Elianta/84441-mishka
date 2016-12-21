@@ -12,6 +12,9 @@
   background-color: $color-white;
   border-bottom: 1px solid #ececec;
 
+  @media (--tablet) {
+    border-bottom: none;
+  }
   @media (--desktop) {
     flex-direction: row;
     justify-content: space-between;
@@ -124,10 +127,15 @@
         &--no-padding {
           padding-left: 0;
         }
+
+        &--no-border {
+          border-right: none;
+        }
       }
     }
   }
 }
+
 .main-nav__item {
   font-size: 17px;
   line-height: calc(24/17);
@@ -187,6 +195,7 @@
     }
   }
 
+
   &:hover {
     color: #8d8d8d;
     > svg {
@@ -223,6 +232,12 @@
       color: $color-black;
       font-weight: bold;
       text-decoration: none;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
 }
 

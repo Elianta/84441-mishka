@@ -2,7 +2,6 @@
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: $color-gray;
-  outline: 1px solid red;
   @media (--tablet) {
     padding-top: 35px;
     padding-bottom: 18px;
@@ -10,7 +9,6 @@
 }
 
 .page-footer__inner {
-  outline: 1px solid red;
   @mixin container;
   display: flex;
   flex-direction: column;
@@ -21,7 +19,6 @@
 }
 
 .page-footer__logo {
-  outline: 1px solid red;
   display: none;
   width: 105px;
   @media (--tablet) {
@@ -31,7 +28,6 @@
 }
 
 .page-footer__copyright {
-  outline: 1px solid red;
   padding-top: 12px;
   padding-bottom: 9px;
   font-size: 19px;
@@ -45,7 +41,6 @@
 }
 
 .page-footer__copyright-link {
-  outline: 1px solid green;
   position: relative;
   display: block;
   padding-top: 15px;

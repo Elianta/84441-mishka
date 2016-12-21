@@ -27,21 +27,35 @@
   border: none;
   font-size: 0;
   background-color: $color-white;
-  background-position: center center;
-  background-repeat: no-repeat;
+  outline: none;
   @media (--tablet) {
     width: 87px;
   }
 
+  > svg {
+    fill: $color-black;
+  }
+
+  &:hover {
+    > svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    > svg {
+      opacity: 0.3;
+    }
+  }
+
   &--prev {
     border-right: 1px solid #ececec;
-    background-image: url("../../img/icon-left-arrow.svg");
     @media (--tablet) {
       border: none;
     }
   }
   &--next {
-    background-image: url("../../img/icon-right-arrow.svg");
+
   }
 }
 

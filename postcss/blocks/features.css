@@ -2,7 +2,6 @@
   @mixin container;
   box-sizing: border-box;
   padding: 26px 0 4px;
-  outline: 1px solid green;
   @media (--tablet) {
     padding-top: 49px;
     padding-bottom: 27px;
@@ -44,7 +43,6 @@
 }
 
 .features__item {
-  outline: 1px solid red;
   position: relative;
   padding-top: 56px;
   margin-bottom: 28px;

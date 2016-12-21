@@ -5,7 +5,11 @@
     padding-top: 0;
     padding-bottom: 63px;
   }
+  @media (--desktop) {
+    padding-bottom: 60px;
+  }
 }
+
 .process__inner {
   @mixin container;
   padding-top: 23px;
@@ -16,6 +20,13 @@
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 44px;
+  }
+  @media (--desktop) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 56px;
   }
 }
 
@@ -32,6 +43,16 @@
     font-size: 20px;
     line-height: calc(24/20);
   }
+  @media (--desktop) {
+    order: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 280px;
+    padding-top: 95px;
+    width: 230px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
   &::before {
     content: "";
@@ -43,6 +64,14 @@
     background-image: url("../../img/icon-video.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    @media (--tablet) {
+      top: -5px;
+      left: 42px;
+    }
+    @media (--desktop) {
+      top: 41px;
+      left: 1px;
+    }
   }
 }
 
@@ -53,6 +82,11 @@
   @media (--tablet) {
     height: 455px;
     margin-bottom: 39px;
+  }
+  @media (--desktop) {
+    order: 1;
+    width: 682px;
+    margin: 0;
   }
 }
 
@@ -84,6 +118,10 @@
   @media (--tablet) {
     order: 2;
   }
+  @media (--desktop) {
+    width: 230px;
+    margin-top: -280px;
+  }
 }
 
 .process__description {
@@ -97,6 +135,12 @@
     padding-bottom: 35px;
     padding-left: 40px;
   }
+  @media (--desktop) {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 11px;
+  }
 }
 
 .process__btn {
@@ -106,36 +150,11 @@
   @media (--tablet) {
     width: 584px;
   }
-}
-
-
-
-@media (--desktop) {
-  .process__inner {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-right: 58px;
-  }
-  .process__title {
-    order: 0;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 260px;
-    padding-top: 101px;
-    width: 232px;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .process__video {
-    order: 1;
-    width: 682px;
-    margin: 0;
-
-  }
-  .process__wrap {
-    width: 232px;
-    margin-top: -260px;
+  @media (--desktop) {
+    width: 230px;
   }
 }
+
+
+
+

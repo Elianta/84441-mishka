@@ -1,5 +1,4 @@
 .social-links {
-  outline: 2px dotted darkviolet;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,6 +10,10 @@
   @media (--tablet) {
     width: 246px;
     padding-top: 7px;
+    border-bottom: none;
+  }
+  @media (--desktop) {
+    width: 570px;
   }
 }
 
