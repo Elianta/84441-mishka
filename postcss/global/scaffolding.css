@@ -8,3 +8,7 @@
   font-style: normal;
   background-color: $color-white;
 }
+
+input, textarea, keygen, select, button {
+  font-family: inherit;
+}
