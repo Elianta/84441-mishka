@@ -15,9 +15,6 @@
   cursor: pointer;
   outline: none;
 
-  &--size {
-
-  }
   &:hover {
     background-color: $text-color;
     color: $color-white;
