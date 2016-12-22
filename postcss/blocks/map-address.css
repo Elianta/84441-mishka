@@ -1,24 +1,25 @@
 .map-address {
   padding-top: calc(457/320 * 100%);
+  margin-bottom: 38px;
   background-color: yellow;
   background-image: url("../../img/map-mobile@1x.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-@media (--tablet) {
-  .map-address {
+  @media (--tablet) {
     padding: 0;
     height: 457px;
+    margin-bottom: 55px;
   }
-}
 
-@media (--desktop) {
-  .map-address {
-    margin: 0;
+  @media (--desktop) {
+    margin: -70px 0 0;
     padding: 0;
     width: 525px;
     order: 1;
   }
 }
+
+
+

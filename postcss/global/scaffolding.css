@@ -1,8 +1,14 @@
 :root {
+  min-width: 320px;
+  overflow-x: hidden;
   font-size: 15px;
   line-height: 2.0;
   font-family: "Open Sans", Arial, sans-serif;
   color: $text-color;
   font-style: normal;
   background-color: $color-white;
+}
+
+input, textarea, keygen, select, button {
+  font-family: inherit;
 }

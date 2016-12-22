@@ -6,36 +6,57 @@
 .slider__item {
 
 }
+
 .slider__controls {
   display: flex;
   border: 1px solid #ececec;
-
+  @media (--tablet) {
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    border: none;
+  }
 }
+
 .slider__btn {
   margin: 0;
   padding: 0;
   width: 129px;
   height: 50px;
+  cursor: pointer;
   border: none;
-  font-size: 0px;
+  font-size: 0;
   background-color: $color-white;
-  background-position: center center;
-  background-repeat: no-repeat;
+  outline: none;
+  @media (--tablet) {
+    width: 87px;
+  }
+
+  > svg {
+    fill: $color-black;
+  }
+
+  &:hover {
+    > svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    > svg {
+      opacity: 0.3;
+    }
+  }
 
   &--prev {
     border-right: 1px solid #ececec;
-    background-image: url("../../img/icon-left-arrow.svg");
-
+    @media (--tablet) {
+      border: none;
+    }
   }
   &--next {
-    background-image: url("../../img/icon-right-arrow.svg");
+
   }
 }
 
-@media (--tablet) {
-  .slider__controls {
-    position: absolute;
-    bottom: 102px;
-    right: 0;
-  }
-}
+

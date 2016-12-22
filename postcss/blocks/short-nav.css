@@ -3,64 +3,118 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
+  margin-top: -5px;
+  padding-top: 5px;
   flex-direction: column;
+  overflow: hidden;
   list-style-type: none;
+  font-size: 19px;
+  line-height: 1.26;
+  font-weight: bold;
+  @media (--tablet) {
+    @mixin container;
+    flex-direction: row;
+    font-size: 20px;
+    line-height: calc(30/20);
+  }
 }
+
 .short-nav__item {
+  box-sizing: border-box;
   position: relative;
-  flex-grow: 1;
-  outline: 1px solid hotpink;
+  margin-bottom: -5px;
+  transition: all 0.1s ease-in;
+  @media (--tablet) {
+    width: 50%;
+  }
 
   &:nth-child(2n+1) {
     background-color: $color-mint;
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
   &:nth-child(2n) {
     background-color: $color-mint-dark;
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
   }
 }
+
 .short-nav__inner {
   @mixin container;
-  padding-top: 15px;
-  outline: 2px dotted yellow;
+  padding-right: 130px;
+  @media (--tablet) {
+    width: 100%;
+    padding-left: 36px;
+  }
+  @media (--desktop) {
+    padding-right: 350px;
+    padding-left: 40px;
+  }
 }
+
 .short-nav__link {
   display: block;
+  box-sizing: border-box;
   width: 100%;
+  padding: 26px 0 36px;
+  text-decoration: none;
+  color: $color-white;
+  @media (--tablet) {
+    padding: 27px 0 37px;
+  }
+  @media (--desktop) {
+    padding: 29px 0 29px;
+  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 15%;
-    bottom: 15px;
-    width: 62px;
-    height: 62px;
-    background-repeat: no-repeat;
+  svg {
+    fill: #149080;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &--interior {
-    &::after {
-      background-image: url("../../img/icon-interior.svg");
+    svg {
+      position: absolute;
+      width: 41px;
+      height: 62px;
+      right: calc(((100vw - 260px) / 2) - 2px);
+      top: 22px;
+
+      @media (--tablet) {
+        right: 36px;
+        top: 30px;
+      }
     }
   }
+
   &--toys {
-    &::after {
-      background-image: url("../../img/icon-toy.svg");
+    svg {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      right: calc(((100vw - 260px) / 2) - 11px);
+      top: 20px;
+      @media (--tablet) {
+        right: 33px;
+        top: 32px;
+      }
     }
-  }
-}
-
-@media (--tablet) {
-  .short-nav {
-    @mixin container;
-    flex-direction: row;
-  }
-  .short-nav__inner {
-    width: 266px;
-  }
-}
-
-@media (--desktop) {
-  .short-nav__inner {
-    width: 455px;
   }
 }

@@ -1,21 +1,46 @@
 .social-link {
+  position: relative;
   display: block;
-  width: 24px;
-  height: 29px;
-  font-size: 0px;
+  width: 40px;
+  height: 44px;
+  font-size: 0;
   background-repeat: no-repeat;
+  > svg {
+    fill: #221f1f;
+  }
 
-  background-color: peachpuff;
+  &:hover {
+    > svg {
+      fill: #46c1ae;
+    }
+  }
+  &:active {
+    > svg {
+      opacity: 0.3;
+    }
+  }
 
   &--inst {
-    background-image: url("../../img/icon-insta.svg");
+    > svg {
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
   }
 
   &--fb {
-    background-image: url("../../img/icon-fb.svg");
+    > svg {
+      position: absolute;
+      top: 5px;
+      left: 15px;
+    }
   }
 
   &--tw {
-    background-image: url("../../img/icon-twitter.svg");
+    > svg {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
   }
 }
