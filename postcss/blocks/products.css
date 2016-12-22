@@ -2,7 +2,6 @@
   @mixin container;
   padding-top: 30px;
   padding-bottom: 22px;
-  outline: 1px solid red;
   @media (--tablet) {
     padding-top: 80px;
     padding-bottom: 52px;
