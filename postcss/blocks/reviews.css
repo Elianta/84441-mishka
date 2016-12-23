@@ -4,10 +4,17 @@
   @media (--tablet) {
     padding-top: 78px;
     padding-bottom: 96px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+    @media (--retina) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
   @media (--desktop) {
-    padding-top: 71px;
-    padding-bottom: 150px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    background: none;
   }
 }
 
@@ -18,7 +25,15 @@
     flex-wrap: wrap;
   }
   @media (--desktop) {
+    padding-top: 71px;
     padding-left: 175px;
+    padding-bottom: 150px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+    @media (--retina) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 }
 

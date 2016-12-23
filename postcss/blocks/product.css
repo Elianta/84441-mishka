@@ -1,5 +1,4 @@
 .product {
-  border: 1px solid #ededed;
   @media (--tablet) {
     display: flex;
   }
@@ -15,10 +14,10 @@
   flex-shrink: 0;
   @media (--tablet) {
     width: 334px;
-    height: 332px;
+    height: 334px;
   }
   @media (--desktop) {
-    width: 315px;
+    width: 316px;
     height: 462px;
   }
 
@@ -30,6 +29,7 @@
 
 .product__inner {
   padding: 26px 28px;
+  border: 1px solid #ededed;
   @media (--tablet) {
     display: flex;
     flex-direction: column;

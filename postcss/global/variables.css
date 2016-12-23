@@ -8,3 +8,4 @@ $text-color: #444444;
 @custom-media --tablet (width >= 768px);
 @custom-media --desktop (width >= 1150px);
 @custom-media --mobile-only (width <=767px);
+@custom-media --retina (min-resolution: 1.5dppx),(min-resolution: 144dpi);

@@ -20,10 +20,20 @@
 
 .page-footer__logo {
   display: none;
-  width: 105px;
   @media (--tablet) {
     display: block;
+    padding-top: 16px;
+    padding-left: 2px;
     width: 174px;
+  }
+  > svg {
+    fill: #231f20;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

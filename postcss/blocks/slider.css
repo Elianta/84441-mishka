@@ -16,6 +16,9 @@
     right: 0;
     border: none;
   }
+  @media (--desktop) {
+    bottom: 188px;
+  }
 }
 
 .slider__btn {
