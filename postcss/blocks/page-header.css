@@ -1,7 +1,11 @@
 .page-header {
   position: relative;
   background-color: #f9f9f9;
+  &--dark {
+    background-color: #f1f1f1;
+  }
 }
+
 .page-header__note {
   display: none;
   line-height: calc(24/15);
@@ -34,6 +38,12 @@
     margin-left: -75px;
     padding-top: 10px;
     z-index: 10;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -44,11 +54,11 @@
   @media (--tablet) {
     @mixin container;
     padding-top: 95px;
-    padding-bottom: 79px;
+    padding-bottom: 92px;
   }
   @media (--desktop) {
     padding-top: 94px;
-    padding-bottom: 102px;
+    padding-bottom: 120px;
   }
 
   &--toy-house {
