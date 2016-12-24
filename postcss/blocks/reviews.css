@@ -46,12 +46,12 @@
     flex-grow: 1;
     margin-bottom: 39px;
     font-size: 43px;
-    line-height: calc(50/43);
+    line-height: 1.16;
     text-indent: -4px;
   }
   @media (--desktop) {
     font-size: 53px;
-    line-height: calc(57 / 53);
+    line-height: 1.1;
   }
 }
 
@@ -72,7 +72,7 @@
     margin-bottom: 59px;
     padding-top: 9px;
     font-size: 17px;
-    line-height: calc(30/17);
+    line-height: 1.76;
   }
   @media (--desktop) {
     padding-right: 100px;
@@ -84,24 +84,24 @@
   display: block;
   margin-bottom: 7px;
   font-size: 18px;
-  line-height: 1.333;
+  line-height: 1.33;
   font-weight: bold;
   font-style: normal;
   color: $color-black;
   @media (--tablet) {
     margin-bottom: 2px;
     font-size: 17px;
-    line-height: calc(24/17);
+    line-height: 1.41;
   }
 }
 
 .reviews__author-nickname {
   display: block;
   font-size: 18px;
-  line-height: 1.333;
+  line-height: 1.33;
   @media (--tablet) {
     font-size: 17px;
-    line-height: calc(30/17);
+    line-height: 1.76;
   }
 }
 

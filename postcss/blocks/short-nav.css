@@ -17,7 +17,7 @@
     margin-top: -5px;
     flex-direction: row;
     font-size: 20px;
-    line-height: calc(30/20);
+    line-height: 1.5;
   }
 }
 
