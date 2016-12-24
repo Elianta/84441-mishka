@@ -9,19 +9,10 @@
 
 .product__image {
   display: block;
-  width: 260px;
-  height: 195px;
   flex-shrink: 0;
-  @media (--tablet) {
-    width: 334px;
-    height: 334px;
-  }
-  @media (--desktop) {
-    width: 316px;
-    height: 462px;
-  }
 
-  > img {
+  img {
+    display: block;
     width: 100%;
     height: auto;
   }
