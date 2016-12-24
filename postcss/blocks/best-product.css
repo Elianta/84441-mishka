@@ -14,7 +14,7 @@
   @media (--desktop) {
     padding-left: 175px;
     padding-top: 47px;
-    padding-bottom: 90px;
+    padding-bottom: 96px;
   }
 }
 
@@ -65,7 +65,7 @@
 
 .best-product__info-wrap {
   @media (--tablet) {
-    margin-bottom: 117px;
+    margin-bottom: 110px;
     box-sizing: border-box;
   }
   @media (--desktop) {
@@ -74,7 +74,7 @@
 }
 
 .best-product__description {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   line-height: 1.6;
   @media (--tablet) {
     width: 290px;
@@ -89,7 +89,7 @@
 
 .best-product__features {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border-collapse: collapse;
   line-height: 1.33;
   @media (--tablet) {
@@ -100,7 +100,7 @@
 .best-product__feature {
   font-size: 15px;
   line-height: calc(20/15);
-  padding: 11px 0 11px;
+  padding: 10px 0 10px;
   border-bottom: 1px solid #ececec;
   @media (--tablet) {
     padding-top: 9px;
@@ -113,7 +113,7 @@
 }
 
 .best-product__feature-value {
-  padding: 10px 0 12px 16px;
+  padding-left: 17px;
   font-size: 15px;
   line-height: calc(20/15);
   border-bottom: 1px solid #ececec;
@@ -135,11 +135,13 @@
   }
   @media (--desktop) {
     width: 525px;
-    height: 636px;
+    height: auto;
     margin-top: -117px;
+    padding-top: 0;
     background-color: #f1f1f1;
   }
-  > img {
+  img {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -147,12 +149,12 @@
 
 .best-product__buy-wrap {
   @media (--tablet) {
-    margin-top: -117px;
+    margin-top: -110px;
   }
 }
 
 .best-product__price {
-  margin: 0 0 26px;
+  margin: 0 0 25px;
   text-align: center;
   font-size: 17px;
   line-height: 1.4;

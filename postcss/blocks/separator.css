@@ -12,23 +12,32 @@
     margin-left: -50vw;
     background-repeat: repeat-x;
     background-image: url(../../img/bg-zigzag-line.svg);
-    background-position: 11px center;
+    background-position: center;
     background-size: auto 7px;
     @media (--tablet) {
       height: 17px;
-      background-position: 31px center;
+      background-position: center;
       background-size: auto 17px;
     }
     @media (--desktop) {
       height: 23px;
-      background-position: 31px center;
+      background-position: center;
       background-size: auto 23px;
     }
   }
 
+  &--hidden {
+    &::after {
+      display: none;
+      @media (--tablet) {
+        display: block;
+      }
+    }
+  }
+
   &--nav {
-    @media (--tablet) {
-      &::after {
+    &::after {
+      @media (--tablet) {
         content: "";
         position: absolute;
         z-index: 12;
@@ -37,10 +46,15 @@
         left: 0;
         height: 24px;
         width: 100%;
+        margin-left: 0;
         background-repeat: repeat-x;
         background-image: url(../../img/bg-zigzag-fill.svg);
-        background-position: 30px center;
+        background-position: center;
         background-size: auto 24px;
+      }
+      @media (--desktop) {
+        height: 34px;
+        background-size: auto 34px;
       }
     }
   }
