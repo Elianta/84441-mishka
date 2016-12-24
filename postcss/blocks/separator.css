@@ -42,7 +42,7 @@
         position: absolute;
         z-index: 12;
         box-sizing: border-box;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         height: 24px;
         width: 100%;
