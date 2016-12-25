@@ -122,6 +122,9 @@
       z-index: 20;
       width: 425px;
       justify-content: flex-start;
+      .main-nav__item {
+        border-left: none;
+      }
 
       .main-nav__link {
         font-size: 15px;
@@ -136,7 +139,7 @@
       .main-nav__link {
         font-size: 17px;
         line-height: 1.4;
-        padding: 31px 37px 31px 34px;
+        padding: 31px 39px 31px 34px;
         border-right: 1px solid #ececec;
 
         &--no-padding {
@@ -156,6 +159,7 @@
   line-height: 1.4;
   font-weight: bold;
   border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
   @media (--tablet) {
     border-top: none;
   }
@@ -163,7 +167,8 @@
   &--text-hidden {
     @media (--tablet) {
       font-size: 0;
-      line-height: 34px;
+      width: 85px;
+      height: 100%;
     }
   }
 }
@@ -178,8 +183,11 @@
 
   @media (--tablet) {
     width: auto;
-    padding: 31px 0 32px 82px;
-    border-left: 1px solid #ececec;
+    padding: 31px 0 30px 82px;
+  }
+
+  @media (--desktop) {
+    padding: 31px 0 34px 81px;
   }
 
   &--icon {
@@ -227,8 +235,8 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: -43px;
-  left: calc(((100vw - 1050px) / 2) - 7px);
+  bottom: -40px;
+  left: calc((100% - 1050px) / 2);
   list-style-type: none;
   @media (--desktop) {
     display: flex;
@@ -266,7 +274,7 @@
     z-index: 2;
   }
   .main-nav--nojs .main-nav__lists {
-    position: static;
+    display: block;
   }
   .main-nav--nojs .main-nav__toggle {
     display: none;
