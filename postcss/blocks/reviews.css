@@ -15,7 +15,6 @@
     padding-top: 0;
     padding-bottom: 0;
     background-image: none;
-    outline: 1px solid red;
     @media (--retina) {
       background-image: none;
     }
