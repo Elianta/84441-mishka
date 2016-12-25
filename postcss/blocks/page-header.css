@@ -25,7 +25,7 @@
   height: 80px;
   text-align: center;
   @media (--tablet) {
-    height: 87px;
+    height: 84px;
     width: 167px;
     padding-top: 20px;
     padding-left: 0;
@@ -38,6 +38,7 @@
     top: 0;
     margin-left: -72px;
     padding-top: 10px;
+    height: 88px;
     z-index: 10;
     &:hover {
       opacity: 0.6;
