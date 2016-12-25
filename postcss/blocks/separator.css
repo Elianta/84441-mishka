@@ -11,29 +11,50 @@
     width: 100vw;
     margin-left: -50vw;
     background-repeat: repeat-x;
-    background-image: url(../../img/wave-small.png);
-    background-position: 11px center;
+    background-image: url(../../img/bg-zigzag-line.svg);
+    background-position: center;
+    background-size: auto 7px;
     @media (--tablet) {
       height: 17px;
-      background-image: url(../../img/wave-largel.png);
-      background-position: 31px center;
+      background-position: center;
+      background-size: auto 17px;
+    }
+    @media (--desktop) {
+      height: 23px;
+      background-position: center;
+      background-size: auto 23px;
+    }
+  }
+
+  &--hidden {
+    &::after {
+      display: none;
+      @media (--tablet) {
+        display: block;
+      }
     }
   }
 
   &--nav {
-    @media (--tablet) {
-      &::after {
+    &::after {
+      @media (--tablet) {
         content: "";
         position: absolute;
         z-index: 12;
         box-sizing: border-box;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
-        height: 12px;
+        height: 24px;
         width: 100%;
+        margin-left: 0;
         background-repeat: repeat-x;
-        background-image: url(../../img/wave-nav.png);
-        background-position: 0px;
+        background-image: url(../../img/bg-zigzag-fill.svg);
+        background-position: center;
+        background-size: auto 24px;
+      }
+      @media (--desktop) {
+        height: 34px;
+        background-size: auto 34px;
       }
     }
   }

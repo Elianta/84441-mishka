@@ -8,13 +8,13 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 33px;
     padding-bottom: 69px;
   }
   @media (--desktop) {
     padding-left: 175px;
-    padding-top: 54px;
-    padding-bottom: 90px;
+    padding-top: 38px;
+    padding-bottom: 96px;
   }
 }
 
@@ -23,20 +23,21 @@
   font-size: 25px;
   line-height: 1.2;
   font-weight: bold;
+  color: $color-black;
   @media (--tablet) {
     flex-grow: 1;
     margin-right: 44px;
     font-size: 43px;
-    line-height: calc(50/43);
+    line-height: 1.16;
     text-indent: -3px;
   }
   @media (--desktop) {
     width: 100%;
     z-index: 2;
-    padding-top: 72px;
+    padding-top: 67px;
     overflow: hidden;
     font-size: 53px;
-    line-height: 1;
+    line-height: 1.2;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -58,37 +59,37 @@
   @media (--desktop) {
     position: absolute;
     left: 21px;
-    top: 128px;
+    top: 112px;
   }
 }
 
 .best-product__info-wrap {
   @media (--tablet) {
-    margin-bottom: 115px;
+    margin-bottom: 110px;
     box-sizing: border-box;
   }
   @media (--desktop) {
-    padding-top: 46px;
+    padding-top: 41px;
   }
 }
 
 .best-product__description {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   line-height: 1.6;
   @media (--tablet) {
     width: 290px;
     margin-bottom: 37px;
     font-size: 17px;
-    line-height: calc(30/17);
+    line-height: 1.76;
   }
   @media (--desktop) {
-    margin-bottom: 48px;
+    margin-bottom: 51px;
   }
 }
 
 .best-product__features {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border-collapse: collapse;
   line-height: 1.33;
   @media (--tablet) {
@@ -98,8 +99,8 @@
 
 .best-product__feature {
   font-size: 15px;
-  line-height: calc(20/15);
-  padding: 11px 0 11px;
+  line-height: 1.33;
+  padding: 10px 0 10px;
   border-bottom: 1px solid #ececec;
   @media (--tablet) {
     padding-top: 9px;
@@ -112,9 +113,9 @@
 }
 
 .best-product__feature-value {
-  padding: 10px 0 12px 16px;
+  padding-left: 17px;
   font-size: 15px;
-  line-height: calc(20/15);
+  line-height: 1.33;
   border-bottom: 1px solid #ececec;
   @media (--tablet) {
     padding-top: 9px;
@@ -134,20 +135,26 @@
   }
   @media (--desktop) {
     width: 525px;
-    height: 636px;
-    margin-top: -114px;
+    height: auto;
+    margin-top: -117px;
+    padding-top: 0;
     background-color: #f1f1f1;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
 .best-product__buy-wrap {
   @media (--tablet) {
-    margin-top: -115px;
+    margin-top: -110px;
   }
 }
 
 .best-product__price {
-  margin: 0 0 26px;
+  margin: 0 0 25px;
   text-align: center;
   font-size: 17px;
   line-height: 1.4;
@@ -157,7 +164,7 @@
     margin-right: 0;
     margin-bottom: 33px;
     font-size: 20px;
-    line-height: calc(24/20);
+    line-height: 1.2;
   }
   @media (--desktop) {
     width: 304px;

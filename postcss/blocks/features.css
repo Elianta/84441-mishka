@@ -22,12 +22,12 @@
   @media (--tablet) {
     margin-bottom: 48px;
     font-size: 43px;
-    line-height: calc(50/43);
+    line-height: 1.16;
     text-indent: -5px;
   }
   @media (--desktop) {
     font-size: 53px;
-    line-height: calc(57/53);
+    line-height: 1.1;
     margin-bottom: 47px;
   }
 }

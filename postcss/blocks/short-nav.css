@@ -14,9 +14,10 @@
   font-weight: bold;
   @media (--tablet) {
     @mixin container;
+    margin-top: -5px;
     flex-direction: row;
     font-size: 20px;
-    line-height: calc(30/20);
+    line-height: 1.5;
   }
 }
 
@@ -68,10 +69,11 @@
   text-decoration: none;
   color: $color-white;
   @media (--tablet) {
-    padding: 27px 0 37px;
+    padding-top: 28px;
+    padding-bottom: 48px;
   }
   @media (--desktop) {
-    padding: 29px 0 29px;
+    padding: 27px 0 51px;
   }
 
   svg {
