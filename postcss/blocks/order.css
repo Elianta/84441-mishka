@@ -3,7 +3,7 @@
   padding-top: 23px;
   padding-bottom: 55px;
   @media (--tablet) {
-    padding-top: 60px;
+    padding-top: 62px;
     padding-bottom: 34px;
   }
   @media (--desktop) {
@@ -274,7 +274,7 @@
   line-height: 1.06);
   font-weight: bold;
   @media (--tablet) {
-    padding-top: 14px;
+    padding-top: 6px;
     padding-right: 26px;
     font-size: 19px;
   }
@@ -466,7 +466,7 @@
   @media (--tablet) {
     width: 230px;
     margin-top: 2px;
-    margin-bottom: auto;
+    margin-bottom: 14px;
   }
   @media (--desktop) {
     margin-left: 175px;

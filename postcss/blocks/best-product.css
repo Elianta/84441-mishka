@@ -13,7 +13,7 @@
   }
   @media (--desktop) {
     padding-left: 175px;
-    padding-top: 47px;
+    padding-top: 38px;
     padding-bottom: 96px;
   }
 }
@@ -59,7 +59,7 @@
   @media (--desktop) {
     position: absolute;
     left: 21px;
-    top: 121px;
+    top: 112px;
   }
 }
 
@@ -83,7 +83,7 @@
     line-height: 1.76;
   }
   @media (--desktop) {
-    margin-bottom: 48px;
+    margin-bottom: 51px;
   }
 }
 

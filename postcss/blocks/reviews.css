@@ -13,8 +13,12 @@
   }
   @media (--desktop) {
     padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     background-image: none;
+    outline: 1px solid red;
+    @media (--retina) {
+      background-image: none;
+    }
   }
 }
 
@@ -23,11 +27,12 @@
   @media (--tablet) {
     display: flex;
     flex-wrap: wrap;
+    background-image: none;
   }
   @media (--desktop) {
     padding-top: 71px;
     padding-left: 175px;
-    padding-bottom: 150px;
+    padding-bottom: 153px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
