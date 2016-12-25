@@ -171,7 +171,9 @@
 .main-nav__link {
   position: relative;
   display: block;
-  @mixin container;
+  width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
   padding: 27px 25px 27px 45px;
   text-decoration: none;
   color: $color-black;

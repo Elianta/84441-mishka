@@ -2,22 +2,27 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   margin-top: -5px;
   padding-top: 5px;
-  flex-direction: column;
   overflow: hidden;
   list-style-type: none;
   font-size: 19px;
   line-height: 1.26;
   font-weight: bold;
   @media (--tablet) {
-    @mixin container;
+    width: 668px;
+    margin: 0 auto;
+    box-sizing: border-box;
     margin-top: -5px;
     flex-direction: row;
     font-size: 20px;
     line-height: 1.5;
+  }
+  @media (--desktop) {
+    width: 1050px;
   }
 }
 
@@ -49,7 +54,9 @@
 }
 
 .short-nav__inner {
-  @mixin container;
+  width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
   padding-right: 130px;
   @media (--tablet) {
     width: 100%;
@@ -96,7 +103,7 @@
       position: absolute;
       width: 41px;
       height: 62px;
-      right: calc(((100vw - 260px) / 2) - 2px);
+      right: calc(((100% - 260px) / 2) + 5px);
       top: 22px;
 
       @media (--tablet) {
@@ -111,7 +118,7 @@
       position: absolute;
       width: 60px;
       height: 60px;
-      right: calc(((100vw - 260px) / 2) - 11px);
+      right: calc(((100% - 260px) / 2) - 5px);
       top: 20px;
       @media (--tablet) {
         right: 33px;
