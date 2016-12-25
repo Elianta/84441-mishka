@@ -271,7 +271,7 @@
   position: relative;
   flex-shrink: 0;
   font-size: 17px;
-  line-height: 1.06);
+  line-height: 1.06;
   font-weight: bold;
   @media (--tablet) {
     padding-top: 6px;
