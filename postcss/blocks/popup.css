@@ -12,7 +12,9 @@
 }
 
 .popup__inner {
-  @mixin container;
+  width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
   padding-top: 30px;
   padding-bottom: 46px;
   text-align: center;
