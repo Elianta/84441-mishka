@@ -239,6 +239,14 @@
     @media (--tablet) {
       border-left: none;
     }
+    @media (--desktop) {
+      border-right: 1px solid #ececec;
+    }
+    &--no-border {
+      @media (--desktop) {
+        border-right: none;
+      }
+    }
   }
   .main-nav__link {
     @media (--tablet) {
@@ -251,16 +259,10 @@
       font-size: 17px;
       line-height: 1.4;
       padding: 31px 39px 34px 34px;
-      border-right: 1px solid #ececec;
     }
     &--no-padding {
       @media (--desktop) {
         padding-left: 0;
-      }
-    }
-    &--no-border {
-      @media (--desktop) {
-        border-right: none;
       }
     }
   }
